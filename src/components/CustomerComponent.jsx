@@ -12,9 +12,6 @@ const CustomerComponent = () => {
   const [arrivaltime, setArrivaltime] = useState('')
   const [departuredate, setDeparturedate] = useState('')
   const [departuretime, setDeparturetime] = useState('')
-  const [breakfast, setBreakfast] = useState('')
-  const [lunch, setLunch] = useState('')
-  const [dinner, setDinner] = useState('')
   
   
   const {id}=useParams();
@@ -34,10 +31,7 @@ const CustomerComponent = () => {
       setArrivaltime(response.data.arrivaltime);
       setDeparturedate(response.data.departuredate);
       setDeparturetime(response.data.departuretime);
-      setBreakfast(response.data.breakfast);
-      setLunch(response.data.lunch);
-      setDinner(response.data.dinner);
- 
+      
     }).catch(error => {
       console.error(error)
     })
