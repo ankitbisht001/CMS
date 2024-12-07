@@ -43,7 +43,7 @@ const CustomerComponent = () => {
 
     if (validateForm()) {
 
-      const customer = { name,contact,email,occupants,arrivaldate,arrivaltime,departuredate,departuretime,breakfast,lunch,dinner}
+      const customer = { name,contact,email,occupants,arrivaldate,arrivaltime,departuredate,departuretime}
       console.log(customer);
       setApiError('');
 
