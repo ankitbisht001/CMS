@@ -168,7 +168,7 @@ const CustomerComponent = () => {
 
 
               <div className='form-group mb-2'>
-                <label className='form-label'>Arrival Date</label>
+                <label className='form-label'>CheckIn Date</label>
                 <input
                   type='date'
                   placeholder='xxxx-xx-xx'
@@ -180,7 +180,7 @@ const CustomerComponent = () => {
               </div>
  
               <div className='form-group mb-2'>
-                <label className='form-label'>Arrival Time</label>
+                <label className='form-label'>CheckIn Time</label>
                 <input
                   type='time'
                   placeholder='xx-xx-xx'
@@ -193,7 +193,7 @@ const CustomerComponent = () => {
 
              
               <div className='form-group mb-2'>
-                <label className='form-label'>Departure Date</label>
+                <label className='form-label'>CheckOut Date</label>
                 <input
                   type='date'
                   placeholder='xxxx-xx-xx'
@@ -205,7 +205,7 @@ const CustomerComponent = () => {
               </div>
  
               <div className='form-group mb-2'>
-                <label className='form-label'>Departure Time</label>
+                <label className='form-label'>CheckOut Time</label>
                 <input
                   type='time'
                   placeholder='xx-xx-xx'
@@ -214,50 +214,7 @@ const CustomerComponent = () => {
                   onChange={(e) => setDeparturetime(e.target.value)}
                 />
                 {errors.departuretime && <div className='invalid-feedback'>{errors.departuretime}</div>}
-              </div>
-             
-
-              <div className='form-group mb-2'>
-                <label className='form-label'>Breakfast</label>
-                <input
-                  type='number'
-                  placeholder='x'
-                  value={breakfast}
-                  className={`form-control ${errors.breakfast ? 'is-invalid' : ''}`}
-                  onChange={(e) => setBreakfast(e.target.value)}
-                />
-                {errors.breakfast && <div className='invalid-feedback'>{errors.breakfast}</div>}
-              </div>
-
-
-              <div className='form-group mb-2'>
-                <label className='form-label'>Lunch</label>
-                <input
-                  type='number'
-                  placeholder='x'
-                  value={lunch}
-                  className={`form-control ${errors.breakfast ? 'is-invalid' : ''}`}
-                  onChange={(e) => setLunch(e.target.value)}
-                />
-                {errors.breakfast && <div className='invalid-feedback'>{errors.lunch}</div>}
-              </div>
- 
-                
-              <div className='form-group mb-2'>
-                <label className='form-label'>Dinner</label>
-                <input
-                  type='number'
-                  placeholder='x'
-                  value={dinner}
-                  className={`form-control ${errors.breakfast ? 'is-invalid' : ''}`}
-                  onChange={(e) => setDinner(e.target.value)}
-                />
-                {errors.dinner && <div className='invalid-feedback'>{errors.dinner}</div>}
-              </div>
-                
-
-
-
+              </div>                
               <button className='btn btn-success' onClick={saveCustomer}>Submit</button>
             </form>
           </div>

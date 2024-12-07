@@ -55,13 +55,10 @@ function removeCustomer(id)
                     <th>Contact</th>
                     <th>Email</th>
                     <th>Occupants</th>
-                    <th>Arrival Date</th>
-                    <th>Arrival Time</th>
-                    <th>Departure Date</th>
-                    <th>Departure Time</th>
-                    <th>Breakfast</th>
-                    <th>Lunch</th>
-                    <th>Dinner</th>
+                    <th>CheckIn Date</th>
+                    <th>CheckIn Time</th>
+                    <th>CheckOut Date</th>
+                    <th>CheckOut Time</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -78,9 +75,6 @@ function removeCustomer(id)
                          <td>{customer.arrivaltime}</td>
                          <td>{customer.departuredate}</td>
                          <td>{customer.departuretime}</td>
-                         <td>{customer.breakfast}</td>
-                         <td>{customer.lunch}</td>
-                         <td>{customer.dinner}</td>
                          <td>
                             <button className='btn btn-info' onClick={()=> updateCustomer(customer.id)}>Update</button>
                             </td>
