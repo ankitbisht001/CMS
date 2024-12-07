@@ -50,9 +50,6 @@ public class CustomerServiceimpl implements CustomerService {
         customer.setArrivaltime(updatedCustomer.getArrivaltime());
         customer.setDeparturedate(updatedCustomer.getDeparturedate());
         customer.setDeparturetime(updatedCustomer.getDeparturetime());
-        customer.setBreakfast(updatedCustomer.getBreakfast());
-        customer.setLunch(updatedCustomer.getLunch());
-        customer.setDinner(updatedCustomer.getDinner());
 
 
         Customer updatedCustomerObj = customerRepository.save(customer);

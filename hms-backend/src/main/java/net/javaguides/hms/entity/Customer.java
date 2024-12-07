@@ -48,15 +48,4 @@ public class Customer {
     @Column(name="departureTime", nullable=false)
     private LocalTime departuretime;
 
-    @Column(name="breakfast")
-    private Integer breakfast;
-
-    @Column(name="lunch")
-    private Integer lunch;
-
-    @Column(name="dinner")
-    private Integer dinner;
-
-    @Column(name="total")
-    private Integer total;
 }

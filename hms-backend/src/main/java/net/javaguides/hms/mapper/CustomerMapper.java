@@ -28,9 +28,7 @@ public class CustomerMapper {
             customerDto.getEmail(),
             customerDto.getOccupants(),
             customerDto.getArrivaldate(), customerDto.getArrivaltime(),
-            customerDto.getDeparturedate(), customerDto.getDeparturetime(),
-            customerDto.getBreakfast(), customerDto.getLunch(),customerDto.getDinner(),
-            customerDto.getTotal()
+            customerDto.getDeparturedate(), customerDto.getDeparturetime()
            );
 
     }

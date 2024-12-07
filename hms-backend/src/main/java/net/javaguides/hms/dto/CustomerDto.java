@@ -23,9 +23,6 @@ public class CustomerDto {
   private LocalTime arrivaltime;
   private LocalDate departuredate;
   private LocalTime departuretime;
-  private Integer breakfast;
-  private Integer lunch;
-  private Integer dinner;
-  private Integer total;
+
 
 }
